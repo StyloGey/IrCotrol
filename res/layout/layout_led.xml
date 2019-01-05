@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_off"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/dark"
+                    android:text="Aus"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent=".5" />
+
+                <Button
+                    android:id="@+id/button_on"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:text="An"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent=".5" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_down"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/dark"
+                    android:elevation="0dp"
+                    android:src="@drawable/ic_brightness_down"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5" />
+
+                <ImageButton
+                    android:id="@+id/button_up"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:elevation="0dp"
+                    android:src="@drawable/ic_brightness_up"
+                    android:tint="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent="0.5" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="96dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_red_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/red_1"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_green_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/green_1"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_red_1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_dark_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/dark_blue"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_white"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="96dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_red_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/red_2"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_green_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/green_2"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_red_2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/blue"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_flash"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <Button
+                    android:id="@+id/button_flash"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:text="Flash"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="96dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_orange_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/orange_1"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_light_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/light_blue"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_orange_1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_violet_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/violet_1"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_strobe"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <Button
+                    android:id="@+id/button_strobe"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:text="Strobe"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="96dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_orange_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/orange_2"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_turquoise"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/turquoise"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_orange_2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_violet_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/violet_2"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_fade"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <Button
+                    android:id="@+id/button_fade"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:text="Fade"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="96dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/yellow"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_cyan"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/cyan"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_yellow"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <ImageButton
+                    android:id="@+id/button_unicorn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/unicorn"
+                    android:elevation="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_circle"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_smooth"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+                <Button
+                    android:id="@+id/button_smooth"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:text="Smooth"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.25" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+    </LinearLayout>
+
+</ScrollView>
