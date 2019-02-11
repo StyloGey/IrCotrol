@@ -3,7 +3,7 @@
     <color name="colorPrimary">#212121</color>
     <color name="colorPrimaryDark">#121212</color>
     <color name="colorAccent">#d8211b</color>
-    <color name="white">#ffffff</color>
+    <color name="white">#FFFFFF</color>
     <color name="dark">#121212</color>
 
     <!-- Red -->
@@ -26,4 +26,5 @@
     <color name="violet_1">#2d1251</color>
     <color name="violet_2">#4a148c</color>
     <color name="unicorn">#aa00ff</color>
+    <color name="thereallydark">#101010</color>
 </resources>

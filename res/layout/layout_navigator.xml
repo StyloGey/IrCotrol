@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_display"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:text="Display"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/button_tune_up"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                android:elevation="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_round_expand_less_24px"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_folder"
+                app:layout_constraintStart_toEndOf="@+id/button_display"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <Button
+                android:id="@+id/button_folder"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:text="Folder"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.33" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/button_arrow_left"
+                style="@android:style/Widget.DeviceDefault.ImageButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_round_chevron_left_24px"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/button_enter"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                android:elevation="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_circle_2"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_arrow_right"
+                app:layout_constraintStart_toEndOf="@+id/button_arrow_left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/button_arrow_right"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_round_chevron_right_24px"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.33" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginBottom="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_menu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:text="Menu"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/button_tune_down"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                android:elevation="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_round_expand_more_24px"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_memory_program"
+                app:layout_constraintStart_toEndOf="@+id/button_menu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <Button
+                android:id="@+id/button_memory_program"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:text="Memory/Program"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.33" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </TableRow>
+
+</LinearLayout>

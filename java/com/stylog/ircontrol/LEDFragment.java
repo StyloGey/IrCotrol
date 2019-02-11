@@ -1,6 +1,9 @@
 package com.stylog.ircontrol;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +12,11 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.stylog.ircontrol.MainActivity.consumerIrManager;
+import static com.stylog.ircontrol.MainActivity.mConsumerIrManager;
 
-public class TestFragment extends Fragment {
+public class LEDFragment extends Fragment {
+
+    private Vibrator mVibrator;
 
     final static class CustomContent {
 
@@ -27,6 +32,8 @@ public class TestFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
 
         View view = inflater.inflate(R.layout.layout_led, container, false);
 
@@ -68,7 +75,10 @@ public class TestFragment extends Fragment {
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    consumerIrManager.transmit(36000, customContent.pattern);
+                    if (mVibrator.hasVibrator()) {
+                        mVibrator.vibrate(VibrationEffect.createOneShot(15, VibrationEffect.DEFAULT_AMPLITUDE));
+                    }
+                    mConsumerIrManager.transmit(36000, customContent.pattern);
                 }
             });
         }

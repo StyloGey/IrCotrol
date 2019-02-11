@@ -12,38 +12,39 @@ import android.support.v4.view.ViewPager;
 
 public class MainActivity extends FragmentActivity {
 
-    static ConsumerIrManager consumerIrManager;
+    static ConsumerIrManager mConsumerIrManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        consumerIrManager = (android.hardware.ConsumerIrManager) getSystemService(Context.CONSUMER_IR_SERVICE);
-
-        PagerAdapter pagerAdapter = new CustomPagerAdapter(getSupportFragmentManager());
+        mConsumerIrManager = (android.hardware.ConsumerIrManager) getSystemService(Context.CONSUMER_IR_SERVICE);
 
         ViewPager viewPager = findViewById(R.id.viewpager);
-        viewPager.setAdapter(pagerAdapter);
+        viewPager.setAdapter(new CustomPagerAdapter(getSupportFragmentManager()));
     }
 
     private class CustomPagerAdapter extends FragmentStatePagerAdapter {
-        CustomPagerAdapter(FragmentManager fm) {
-            super(fm);
+        CustomPagerAdapter(FragmentManager fragmentManager) {
+            super(fragmentManager);
         }
 
         @Override
         public Fragment getItem(int position) {
             if (position == 0) {
-                return new LED();
-            } else {
-                return new TestFragment();
+                return new LEDFragment();
+            } else if (position == 1) {
+                return new PioneerCM35KFragment();
+            } else if (position == 2) {
+                return new PanasonicSCPM254Fragment();
             }
+            return null;
         }
 
         @Override
         public int getCount() {
-            return 2;
+            return 3;
         }
     }
 

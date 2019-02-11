@@ -20,7 +20,7 @@
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:id="@+id/button_cm35k_cd_eject"
+                    android:id="@+id/button_scpm254_cd_eject"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="@color/white"
@@ -33,7 +33,7 @@
                     app:layout_constraintWidth_percent="0.5" />
 
                 <ImageButton
-                    android:id="@+id/button_cm35k_on_off"
+                    android:id="@+id/button_scpm254_on_off"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="@color/dark"
@@ -52,75 +52,6 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="72dp">
-
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/button_cm35k_input_cd"
-                    style="@android:style/Widget.DeviceDefault.ImageButton"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:background="@color/colorPrimary"
-                    android:elevation="0dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/ic_cd"
-                    android:tint="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintWidth_percent="0.25" />
-
-                <ImageButton
-                    android:id="@+id/button_cm35k_input_usb"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:background="@color/colorPrimaryDark"
-                    android:elevation="0dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/ic_round_usb_24px"
-                    android:tint="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/button_cm35k_input_cd"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintWidth_percent="0.25" />
-
-                <ImageButton
-                    android:id="@+id/button_cm35k_input_tuner"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:background="@color/colorPrimaryDark"
-                    android:elevation="0dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/ic_round_radio_24px"
-                    android:tint="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button_cm35k_input_audio_in"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintWidth_percent="0.25" />
-
-                <Button
-                    android:id="@+id/button_cm35k_input_audio_in"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:background="@color/colorPrimaryDark"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:elevation="0dp"
-                    android:text="Audio in"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintWidth_percent="0.25" />
-
-            </android.support.constraint.ConstraintLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
             android:layout_height="72dp"
             android:layout_marginBottom="8dp">
 
@@ -129,7 +60,7 @@
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:id="@+id/button_cm35k_input_bt"
+                    android:id="@+id/button_scpm254_input_bt"
                     style="@android:style/Widget.DeviceDefault.ImageButton"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
@@ -144,59 +75,38 @@
                     app:layout_constraintWidth_percent="0.33" />
 
                 <ImageButton
-                    android:id="@+id/button_cm35k_input_clock_timer"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:background="@color/colorPrimary"
-                    android:elevation="0dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/ic_round_timer_24px"
-                    android:tint="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button_cm35k_input_sleep"
-                    app:layout_constraintStart_toEndOf="@+id/button_cm35k_input_bt"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintWidth_percent="0.33" />
-
-                <ImageButton
-                    android:id="@+id/button_cm35k_input_sleep"
+                    android:id="@+id/button_scpm254_input_usb"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="@color/colorPrimaryDark"
                     android:elevation="0dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/ic_sleep"
+                    android:src="@drawable/ic_round_usb_24px"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button_scpm254_input_bt"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.33" />
+
+                <ImageButton
+                    android:id="@+id/button_scpm254_input_tuner"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="0dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_round_radio_24px"
                     android:tint="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
                     app:layout_constraintWidth_percent="0.33" />
 
 
             </android.support.constraint.ConstraintLayout>
 
         </TableRow>
-
-        <include
-            layout="@layout/layout_numpad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <include
-            layout="@layout/layout_navigator"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <include
-            layout="@layout/layout_volume"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <include
-            layout="@layout/layout_music"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -207,62 +117,151 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_cm35k_stereo_mono"
+                    android:id="@+id/button_scpm254_setup"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="@color/colorPrimaryDark"
                     android:elevation="0dp"
-                    android:text="Stereo/Mono"
+                    android:text="Setup"
                     android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:layout_constraintWidth_percent="0.25" />
+                    app:layout_constraintWidth_percent="0.33" />
 
-                <Button
-                    android:id="@+id/button_cm35k_rds_aspm"
+                <ImageButton
+                    android:id="@+id/button_mute"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="@color/colorPrimary"
                     android:elevation="0dp"
-                    android:text="ASPM"
-                    android:textColor="@color/white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_round_volume_mute_24px"
+                    android:tint="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/button_cm35k_stereo_mono"
+                    app:layout_constraintEnd_toStartOf="@+id/button_vol_up"
+                    app:layout_constraintStart_toEndOf="@+id/button_scpm254_setup"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintWidth_percent="0.25" />
+                    app:layout_constraintWidth_percent="0.33" />
 
-                <Button
-                    android:id="@+id/button_cm35k_rds_pty"
+                <ImageButton
+                    android:id="@+id/button_vol_up"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="@color/colorPrimaryDark"
                     android:elevation="0dp"
-                    android:text="PTY"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button_cm35k_rds_display"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:layout_constraintWidth_percent="0.25" />
-
-                <Button
-                    android:id="@+id/button_cm35k_rds_display"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:background="@color/colorPrimary"
-                    android:elevation="0dp"
-                    android:text="Display"
-                    android:textColor="@color/white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_round_volume_up_24px"
+                    android:tint="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintWidth_percent="0.25" />
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent="0.33" />
 
             </android.support.constraint.ConstraintLayout>
 
         </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="8dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_scpm254_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="0dp"
+                    android:text="@android:string/ok"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.33" />
+
+                <ImageButton
+                    android:id="@+id/button_dimmer"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="0dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_brightness_up"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_vol_down"
+                    app:layout_constraintStart_toEndOf="@+id/button_scpm254_ok"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.33" />
+
+                <ImageButton
+                    android:id="@+id/button_vol_down"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:elevation="0dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_round_volume_down_24px"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent="0.33" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/button_scpm254_album_up"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="0dp"
+                    android:src="@drawable/ic_round_expand_less_24px"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5" />
+
+                <ImageButton
+                    android:id="@+id/button_scpm254_album_down"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/dark"
+                    android:elevation="0dp"
+                    android:src="@drawable/ic_round_expand_more_24px"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent="0.5" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <include
+            layout="@layout/layout_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
