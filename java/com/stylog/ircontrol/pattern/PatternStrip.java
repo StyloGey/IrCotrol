@@ -1,4 +1,4 @@
-package com.stylog.ircontrol;
+package com.stylog.ircontrol.pattern;
 
 public interface PatternStrip {
     // On-Off

@@ -17,14 +17,14 @@
                 android:id="@+id/button_cm35k_up"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/dark"
                 android:elevation="0dp"
                 android:text="Preset +"
-                android:textColor="@color/white"
+                android:textColor="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.33" />
+                app:layout_constraintWidth_percent="0.333" />
 
             <ImageButton
                 android:id="@+id/button_mute"
@@ -34,27 +34,27 @@
                 android:elevation="0dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_round_volume_mute_24px"
-                android:tint="@color/white"
+                android:tint="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/button_vol_up"
                 app:layout_constraintStart_toEndOf="@+id/button_cm35k_up"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.33" />
+                app:layout_constraintWidth_percent="0.333" />
 
             <ImageButton
                 android:id="@+id/button_vol_up"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/dark"
                 android:elevation="0dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_round_volume_up_24px"
-                android:tint="@color/white"
+                android:tint="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                app:layout_constraintWidth_percent="0.33" />
+                app:layout_constraintWidth_percent="0.333" />
 
         </android.support.constraint.ConstraintLayout>
 
@@ -73,14 +73,14 @@
                 android:id="@+id/button_preset_down"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/dark"
                 android:elevation="0dp"
                 android:text="Preset -"
-                android:textColor="@color/white"
+                android:textColor="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.33" />
+                app:layout_constraintWidth_percent="0.333" />
 
             <ImageButton
                 android:id="@+id/button_dimmer"
@@ -90,27 +90,27 @@
                 android:elevation="0dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_brightness_up"
-                android:tint="@color/white"
+                android:tint="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/button_vol_down"
                 app:layout_constraintStart_toEndOf="@+id/button_preset_down"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.33" />
+                app:layout_constraintWidth_percent="0.333" />
 
             <ImageButton
                 android:id="@+id/button_vol_down"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/dark"
                 android:elevation="0dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_round_volume_down_24px"
-                android:tint="@color/white"
+                android:tint="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                app:layout_constraintWidth_percent="0.33" />
+                app:layout_constraintWidth_percent="0.333" />
 
         </android.support.constraint.ConstraintLayout>
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_led_strip"
+            android:icon="@drawable/ic_brightness_up"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/led_strip" />
+        <item
+            android:id="@+id/nav_pioneer_cm35k"
+            android:icon="@drawable/ic_round_radio_24px"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/pioneer_cm35k" />
+        <item
+            android:id="@+id/nav_panasonic_scpm254"
+            android:icon="@drawable/ic_round_radio_24px"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/panasonic_scpm254" />
+    </group>
+</menu>

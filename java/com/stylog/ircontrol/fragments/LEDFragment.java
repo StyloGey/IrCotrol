@@ -1,4 +1,4 @@
-package com.stylog.ircontrol;
+package com.stylog.ircontrol.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,10 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.stylog.ircontrol.MainActivity;
+import com.stylog.ircontrol.R;
+import com.stylog.ircontrol.pattern.PatternStrip;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.stylog.ircontrol.MainActivity.mConsumerIrManager;
 
 public class LEDFragment extends Fragment {
 
@@ -20,8 +22,8 @@ public class LEDFragment extends Fragment {
 
     final static class CustomContent {
 
-        int id;
-        int[] pattern;
+        final int id;
+        final int[] pattern;
 
         CustomContent(int id, int[] pattern) {
             this.id = id;
@@ -48,7 +50,7 @@ public class LEDFragment extends Fragment {
             add(new CustomContent(R.id.button_fade, PatternStrip.FADE));
             add(new CustomContent(R.id.button_smooth, PatternStrip.SMOOTH));
 
-            add(new CustomContent(R.id.button_white, PatternStrip.WHITE));
+            add(new CustomContent(R.id.button_grey_50, PatternStrip.WHITE));
 
             add(new CustomContent(R.id.button_red_1, PatternStrip.RED_1));
             add(new CustomContent(R.id.button_red_2, PatternStrip.RED_2));
@@ -78,7 +80,8 @@ public class LEDFragment extends Fragment {
                     if (mVibrator.hasVibrator()) {
                         mVibrator.vibrate(VibrationEffect.createOneShot(15, VibrationEffect.DEFAULT_AMPLITUDE));
                     }
-                    mConsumerIrManager.transmit(36000, customContent.pattern);
+
+                    MainActivity.getmConsumerIrManager().transmit(36000, customContent.pattern);
                 }
             });
         }
