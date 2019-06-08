@@ -14,6 +14,9 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.widget.TextView;
 
 import com.stylog.ircontrol.fragments.LEDFragment;
 import com.stylog.ircontrol.fragments.PanasonicSCPM254Fragment;
@@ -21,9 +24,18 @@ import com.stylog.ircontrol.fragments.PioneerCM35KFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
+    private DrawerLayout mDrawerLayout;
+    private NavigationView mNavigationView;
     private static ConsumerIrManager mConsumerIrManager;
+
+    private String mNextTitleText;
+    private boolean mVisible = true;
+    private TextView mTitle;
+    private AlphaAnimation mAlphaAnimation;
+
+    private void animate() {
+        mTitle.startAnimation(mAlphaAnimation);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +46,30 @@ public class MainActivity extends AppCompatActivity {
 
         final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mTitle = (TextView) toolbar.getChildAt(0); // Title TV
+
+        mAlphaAnimation = new AlphaAnimation(1.0f, 0.0f);
+        mAlphaAnimation.setDuration(250);
+        mAlphaAnimation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                if (mVisible) {
+                    mAlphaAnimation.setRepeatMode(Animation.REVERSE);
+                } else {
+                    mAlphaAnimation.setRepeatMode(Animation.RESTART);
+                }
+                mTitle.setText(mNextTitleText);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+            }
+        });
 
         final ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {
@@ -72,18 +108,21 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 switch (position) {
                     case 0:
-                        navigationView.setCheckedItem(R.id.nav_led_strip);
-                        toolbar.setTitle(R.string.led_strip);
+                        mNavigationView.setCheckedItem(R.id.nav_led_strip);
+                        mNextTitleText = getString(R.string.led_strip);
+                        animate();
                         break;
 
                     case 1:
-                        navigationView.setCheckedItem(R.id.nav_pioneer_cm35k);
-                        toolbar.setTitle(R.string.pioneer_cm35k);
+                        mNavigationView.setCheckedItem(R.id.nav_pioneer_cm35k);
+                        mNextTitleText = getString(R.string.pioneer_cm35k);
+                        animate();
                         break;
 
                     case 2:
-                        navigationView.setCheckedItem(R.id.nav_panasonic_scpm254);
-                        toolbar.setTitle(R.string.panasonic_scpm254);
+                        mNavigationView.setCheckedItem(R.id.nav_panasonic_scpm254);
+                        mNextTitleText = getString(R.string.panasonic_scpm254);
+                        animate();
                         break;
                 }
             }
@@ -94,15 +133,15 @@ public class MainActivity extends AppCompatActivity {
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
 
-        drawerLayout = findViewById(R.id.drawer_layout);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
 
-        navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(
+        mNavigationView = findViewById(R.id.nav_view);
+        mNavigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         menuItem.setChecked(true);
-                        drawerLayout.closeDrawers();
+                        mDrawerLayout.closeDrawers();
 
                         switch (menuItem.getItemId()) {
                             case R.id.nav_led_strip:
@@ -120,14 +159,14 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
-        navigationView.setCheckedItem(R.id.nav_led_strip);
+        mNavigationView.setCheckedItem(R.id.nav_led_strip);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                drawerLayout.openDrawer(GravityCompat.START);
+                mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
         }
         return super.onOptionsItemSelected(item);
