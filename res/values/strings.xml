@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">IRControl</string>
-
-    <string name="led_strip">LED</string>
-    <string name="pioneer_cm35k">Pioneer CM35K</string>
-    <string name="panasonic_scpm254">Panasonic SCPM254</string>
-</resources>

@@ -108,7 +108,7 @@
                     android:background="@color/dark"
                     android:backgroundTint="@color/colorPrimary"
                     android:elevation="0dp"
-                    android:text="Audio in"
+                    android:text="@string/audio_in"
                     android:textColor="@color/grey_50"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -181,22 +181,26 @@
         <include
             layout="@layout/layout_numpad"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
 
         <include
             layout="@layout/layout_navigator"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
 
         <include
             layout="@layout/layout_volume"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
 
         <include
             layout="@layout/layout_music"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -212,7 +216,7 @@
                     android:layout_height="0dp"
                     android:background="@color/dark"
                     android:elevation="0dp"
-                    android:text="Stereo/Mono"
+                    android:text="@string/stereo_mono"
                     android:textColor="@color/grey_50"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -226,7 +230,7 @@
                     android:layout_height="0dp"
                     android:background="@color/colorPrimary"
                     android:elevation="0dp"
-                    android:text="ASPM"
+                    android:text="@string/aspm"
                     android:textColor="@color/grey_50"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/button_cm35k_stereo_mono"
@@ -239,7 +243,7 @@
                     android:layout_height="0dp"
                     android:background="@color/dark"
                     android:elevation="0dp"
-                    android:text="PTY"
+                    android:text="@string/pty"
                     android:textColor="@color/grey_50"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/button_cm35k_rds_display"
@@ -253,7 +257,7 @@
                     android:layout_height="0dp"
                     android:background="@color/colorPrimary"
                     android:elevation="0dp"
-                    android:text="Display"
+                    android:text="@string/display"
                     android:textColor="@color/grey_50"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

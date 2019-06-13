@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTitle;
     private AlphaAnimation mAlphaAnimation;
 
+    private LEDFragment mLedFragment;
+    private PioneerCM35KFragment mPioneerCM35KFragment;
+    private PanasonicSCPM254Fragment mPanasonicSCPM254Fragment;
+
     private void animate() {
         mTitle.startAnimation(mAlphaAnimation);
     }
@@ -43,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.drawer);
 
         mConsumerIrManager = (android.hardware.ConsumerIrManager) getSystemService(Context.CONSUMER_IR_SERVICE);
+        mLedFragment = new LEDFragment();
+        mPioneerCM35KFragment = new PioneerCM35KFragment();
+        mPanasonicSCPM254Fragment = new PanasonicSCPM254Fragment();
 
         final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -76,11 +83,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public Fragment getItem(int position) {
                 if (position == 0) {
-                    return new LEDFragment();
+                    return mLedFragment;
                 } else if (position == 1) {
-                    return new PioneerCM35KFragment();
+                    return mPioneerCM35KFragment;
                 } else if (position == 2) {
-                    return new PanasonicSCPM254Fragment();
+                    return mPanasonicSCPM254Fragment;
                 }
                 return null;
             }

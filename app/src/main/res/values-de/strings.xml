@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IRControl</string>
+    <string name="fade">Überblenden</string>
+    <string name="flash">Blinken</string>
+    <string name="folder">Ordner</string>
+    <string name="menu">Menü</string>
+    <string name="off">Aus</string>
+    <string name="on">An</string>
+    <string name="smooth">Stufenlos</string>
+</resources>

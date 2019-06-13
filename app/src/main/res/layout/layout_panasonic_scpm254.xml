@@ -121,7 +121,7 @@
                     android:layout_height="0dp"
                     android:background="@color/dark"
                     android:elevation="0dp"
-                    android:text="Setup"
+                    android:text="@string/setup"
                     android:textColor="@color/grey_50"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

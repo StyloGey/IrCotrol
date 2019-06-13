@@ -14,12 +14,12 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button_display"
+                android:id="@+id/button_cm35k_up"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@color/dark"
                 android:elevation="0dp"
-                android:text="Display"
+                android:text="@string/preset_next"
                 android:textColor="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -27,28 +27,29 @@
                 app:layout_constraintWidth_percent="0.333" />
 
             <ImageButton
-                android:id="@+id/button_tune_up"
+                android:id="@+id/button_mute"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@color/colorPrimary"
                 android:elevation="0dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/ic_round_expand_less_24px"
+                android:src="@drawable/ic_round_volume_mute_24px"
                 android:tint="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button_folder"
-                app:layout_constraintStart_toEndOf="@+id/button_display"
+                app:layout_constraintEnd_toStartOf="@+id/button_vol_up"
+                app:layout_constraintStart_toEndOf="@+id/button_cm35k_up"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_percent="0.333" />
 
-            <Button
-                android:id="@+id/button_folder"
+            <ImageButton
+                android:id="@+id/button_vol_up"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@color/dark"
                 android:elevation="0dp"
-                android:text="Folder"
-                android:textColor="@color/grey_50"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_round_volume_up_24px"
+                android:tint="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -67,44 +68,42 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/button_arrow_left"
-                style="@android:style/Widget.DeviceDefault.ImageButton"
+            <Button
+                android:id="@+id/button_preset_down"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@color/dark"
                 android:elevation="0dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_round_chevron_left_24px"
-                android:tint="@color/grey_50"
+                android:text="@string/preset_previous"
+                android:textColor="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_percent="0.333" />
 
             <ImageButton
-                android:id="@+id/button_enter"
+                android:id="@+id/button_dimmer"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@color/colorPrimary"
                 android:elevation="0dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/ic_circle_2"
+                android:src="@drawable/ic_brightness_up"
                 android:tint="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button_arrow_right"
-                app:layout_constraintStart_toEndOf="@+id/button_arrow_left"
+                app:layout_constraintEnd_toStartOf="@+id/button_vol_down"
+                app:layout_constraintStart_toEndOf="@+id/button_preset_down"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_percent="0.333" />
 
             <ImageButton
-                android:id="@+id/button_arrow_right"
+                android:id="@+id/button_vol_down"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@color/dark"
                 android:elevation="0dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/ic_round_chevron_right_24px"
+                android:src="@drawable/ic_round_volume_down_24px"
                 android:tint="@color/grey_50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -116,59 +115,5 @@
 
     </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:layout_marginBottom="8dp">
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/button_menu"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@color/dark"
-                android:elevation="0dp"
-                android:text="Menu"
-                android:textColor="@color/grey_50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.333" />
-
-            <ImageButton
-                android:id="@+id/button_tune_down"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@color/colorPrimary"
-                android:elevation="0dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_round_expand_more_24px"
-                android:tint="@color/grey_50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button_memory_program"
-                app:layout_constraintStart_toEndOf="@+id/button_menu"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.333" />
-
-            <Button
-                android:id="@+id/button_memory_program"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@color/dark"
-                android:elevation="0dp"
-                android:text="Memory/Program"
-                android:textColor="@color/grey_50"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:layout_constraintWidth_percent="0.333" />
-
-        </android.support.constraint.ConstraintLayout>
-
-    </TableRow>
 
 </LinearLayout>

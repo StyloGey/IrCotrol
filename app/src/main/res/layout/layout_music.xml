@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableRow android:layout_height="72dp"
-    android:layout_marginBottom="8dp"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <android.support.constraint.ConstraintLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
 
         <ImageButton
+            android:id="@+id/button_previous"
             style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:background="@color/colorPrimary"
             android:elevation="0dp"
-            android:id="@+id/button_previous"
-            android:layout_height="0dp"
-            android:layout_width="0dp"
             android:scaleType="centerInside"
             android:src="@drawable/ic_round_skip_previous_24px"
             android:tint="@color/grey_50"
@@ -25,11 +25,11 @@
             app:layout_constraintWidth_percent="0.25" />
 
         <ImageButton
+            android:id="@+id/button_stop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:background="@color/dark"
             android:elevation="0dp"
-            android:id="@+id/button_stop"
-            android:layout_height="0dp"
-            android:layout_width="0dp"
             android:scaleType="centerInside"
             android:src="@drawable/ic_round_stop_24px"
             android:tint="@color/grey_50"
@@ -39,11 +39,11 @@
             app:layout_constraintWidth_percent="0.25" />
 
         <ImageButton
+            android:id="@+id/button_play_pause"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:background="@color/colorPrimary"
             android:elevation="0dp"
-            android:id="@+id/button_play_pause"
-            android:layout_height="0dp"
-            android:layout_width="0dp"
             android:scaleType="centerInside"
             android:src="@drawable/ic_round_play_arrow_24px"
             android:tint="@color/grey_50"
@@ -53,11 +53,11 @@
             app:layout_constraintWidth_percent="0.25" />
 
         <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:background="@color/dark"
             android:elevation="0dp"
-            android:id="@+id/button_next"
-            android:layout_height="0dp"
-            android:layout_width="0dp"
             android:scaleType="centerInside"
             android:src="@drawable/ic_round_skip_next_24px"
             android:tint="@color/grey_50"
@@ -68,4 +68,4 @@
 
     </android.support.constraint.ConstraintLayout>
 
-</TableRow>
+</LinearLayout>

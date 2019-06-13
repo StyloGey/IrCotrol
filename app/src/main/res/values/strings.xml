@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">IRControl</string>
+
+    <string name="led_strip">LED</string>
+    <string name="pioneer_cm35k">Pioneer CM35K</string>
+    <string name="panasonic_scpm254">Panasonic SCPM254</string>
+
+    <!-- volume -->
+    <string name="preset_next">Preset +</string>
+    <string name="preset_previous">Preset -</string>
+
+    <!-- numpad -->
+    <string name="num_0" translatable="false">0</string>
+    <string name="num_1" translatable="false">1</string>
+    <string name="num_2" translatable="false">2</string>
+    <string name="num_3" translatable="false">3</string>
+    <string name="num_4" translatable="false">4</string>
+    <string name="num_5" translatable="false">5</string>
+    <string name="num_6" translatable="false">6</string>
+    <string name="num_7" translatable="false">7</string>
+    <string name="num_8" translatable="false">8</string>
+    <string name="num_9" translatable="false">9</string>
+    <string name="bass_treble">Bass/Treble</string>
+    <string name="p_bass">P.Bass</string>
+
+    <!-- navigator -->
+    <string name="display">Display</string>
+    <string name="folder">Folder</string>
+    <string name="menu">Menu</string>
+    <string name="memory_program">Memory/Program</string>
+
+    <!-- led -->
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="flash">Flash</string>
+    <string name="strobe">Strobe</string>
+    <string name="fade">Fade</string>
+    <string name="smooth">Smooth</string>
+
+    <!-- panasonic -->
+    <string name="setup">Setup</string>
+
+    <!-- pioneer -->
+    <string name="audio_in">Audio in</string>
+    <string name="stereo_mono">Stereo/Mono</string>
+    <string name="aspm" translatable="false">ASPM</string>
+    <string name="pty" translatable="false">PTY</string>
+</resources>
